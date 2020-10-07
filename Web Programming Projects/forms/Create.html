@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+	<title>Big Boys Burgers</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+	</head>	
+
+<body>
+
+	<table>
+		<thead>
+			<tr>
+				<!--Assigning div class to "headcenter"-->
+				<div class = "headercenter"> 
+				<p> Big Boys Burgers</p>
+				</div>
+	        	
+			</tr>
+		</thead>
+
+<tr><!--Assigning div class to "mainmenu",making unordered list with list attributes. The list will contain menu categories-->
+	<div class="mainmenu">
+		<ul>
+			<p><li><a href="index.html">Menu</a></li>
+			<li><a href="#">Browse</a></li>
+			<!--Assigning div class to "dropdown" and "dropdown-content. Using anchor tags to populate the categories "My Account" and "My Shopping Cart" with dropdown-content".-->
+			<li class= "dropdown"><a href="#"class="dropbox">My shopping cart</a><div class="dropdown-content">
+				<a href="#">Clear Cart</a>
+				<a href="#">My Orders</a></div></li>
+			<li class="dropdown"><a href="#"class="dropbox">My Account</a><div class="dropdown-content">		
+				<a href="login.html">Login</a> 
+				<a href="#">Logout</a> 
+				<a href="Create.html">Create Account</a>  
+					</div>
+				</p>
+			</li>	
+		</div>
+	</ul>
+</tr>
+</table>
+<div class="loginform">
+	<h1>Create Account</h1>
+</div>
+
+<div class="loginformtwo">
+	<form method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+
+Username: <input type="text" name="username">
+	<span class="error">* <?php echo $userErr;?></span>
+<br>
+<br>
+
+Email Address: <input type="text" name="email">
+	<span class="error">* <?php echo $emailErr;?></span>
+<br>
+<br>
+
+Confirm Email Address: <input type="text" name="confirmEmail">
+	<span class="error">* <?php echo $confirmEmailErr;?></span>
+<br>
+<br>
+<br>
+
+<p>Select a password (Minimum of 5 characters)</p>
+Password: <input type="text" name="password">
+	<span class="error">* <?php echo $passErr;?></span>
+<br>
+<br>
+
+Confirm Password: <input type="text" name="passwordConf">
+		<span class="error">* <?php echo $passconfErr;?></span>
+<br>
+<br>
+
+<label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <br><br>
+
+<input type="submit" name="submit" value="Create Account">
+<input type="reset" name="reset" value="Reset Form">
+
+</form>
+</div>
+<!-- Assigning div class to "bottomtext"-->
+		<div class = "bottomtext">
+			<p> If there ain't bacon, that ain't a burger!</p>
+			Proprietor:<a href = "mailto: jmora284@live.kutztown.edu"> Joel Morales </a>
+		</div> 
+	</body>
+</html>
+

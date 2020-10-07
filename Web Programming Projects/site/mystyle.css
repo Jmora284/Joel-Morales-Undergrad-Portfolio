@@ -1,0 +1,147 @@
+body{
+background-color:black}
+
+a:hover {
+	color:darkorange;
+}
+
+table{
+	border:none;
+	width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.headercenter {background-color:indigo;
+	border: 3px solid deeppink;
+	font-style: italic;
+	font-size: 30px;
+	text-decoration: underline darkorange;
+	text-align:center;
+	color: fuchsia;	
+}
+
+.mainmenu ul {margin: 1px;
+      padding: 1px;
+      list-style-type: none;
+      text-align: center;
+    }
+    .mainmenu ul li   {
+      display: inline;
+	  
+    }
+    .mainmenu ul li a  { text-decoration: none;
+      padding: .2em 1em;
+      color: fuchsia;
+      background-color: indigo;
+      border:3px solid fuchsia ;
+	  
+    }
+	
+
+tr{
+	background-color:darkorange;
+}
+
+.bodytitletext,.bodytitle {border :3px solid darkorange;
+	background-color:mediumvioletred;
+	color:darkorange;
+	font: 15px gerogia;
+	font-style:arial;
+}
+
+.bodytitle	{text-align:center;
+	background-color:indigo;
+}
+
+.bottomtext{border: 3px solid fuchsia;
+	background-color:mediumvioletred;
+	text-align:center;
+	font-weight:bold;
+	color:darkorange;
+}
+
+th,td,.bodytitletext,.bottomtext{
+	padding: 10px;
+}
+
+.dropdown {border-style: none;    
+            width: 100%;         
+            position: relative; 
+            
+}
+
+ .dropbox {background-color:indigo;
+            color: fuchsia;
+            font-size: large;
+            padding-top: .5em;
+            padding-bottom: .5em;
+            width: 100%;
+            text-align: center;
+            border-style: solid;
+            border-color: fuchsia;
+            border-radius: 5px;
+}
+
+
+.dropdown-content {display: none;
+            background-color:fuchsia;
+            width:100%;
+			z-index:1;
+			 right: 0; left: 0; 
+			position:relative;
+}
+        
+          
+.dropdown-content a {color: indigo;
+            padding: .5em;
+            display: block;     
+            text-align: center;
+}
+
+.dropdown-content a:hover {
+             background-color:darkorange;
+}
+
+.dropdown:hover .dropdown-content {display:block;
+             border-style: solid;
+             border-color: gray;
+             border-radius: 5px;
+			 position:absolute;
+}
+
+ a:hover {
+              color: blue;
+          }
+.texter {text-align:left;
+	line-height:2;
+	margin-top:0;
+	margin-bottom: 0;
+	text-indent: 22px;
+}
+.textertwo {text-align: left;
+	line-height:2;
+	margin-top:0;
+	margin-bottom: 0;
+	text-indent: 22px;
+}
+
+.loginform{
+	    position:relative;
+		text-align:center;
+		margin:auto;
+		color:black;
+		padding:10px;
+}
+	
+.loginformtwo{
+		position:relative;
+		text-align:center;
+		margin:auto;
+		color:black;
+		padding:10px;
+		border-style: solid;
+		border-width: medium;
+		border-color:black;
+}
